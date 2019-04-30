@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="groups1">Groups</string>
+    <string name="activity">Activity</string>
+    <string name="friends">Friends</string>
+
 </resources>
