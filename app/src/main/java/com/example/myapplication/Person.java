@@ -8,7 +8,7 @@ public class Person {
 
     private String name;                    // name of person
     private String email;                   // email of person
-    private String phoneNo;                 // phone number of person
+    private int phoneNo;                 // phone number of person
     private String password;                // password of person
     private ArrayList<Expense> expenses;    // The expense history of person
     private ArrayList<Person> friends;      // THe friends of this person
@@ -21,7 +21,7 @@ public class Person {
     //
     // PURPOSE:   Constructor
     //-----------------------------------------------------
-    public Person(String name,String email,String phoneNo,String password){
+    public Person(String name,String email,int phoneNo,String password){
 
         this.name=name;
         this.email=email;
@@ -54,7 +54,7 @@ public class Person {
         return name;
     }
 
-    public String getPhoneNo() {
+    public int getPhoneNo() {
         return phoneNo;
     }
 }

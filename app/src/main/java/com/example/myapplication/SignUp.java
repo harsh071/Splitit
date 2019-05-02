@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +28,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         email=findViewById(R.id.boxSignUpEmail);
-        password=findViewById(R.id.boxLoginPassword);
+        password=findViewById(R.id.boxSignUpPassword);
         signUpButton=findViewById(R.id.buttonSignUpAccount);
         name=findViewById(R.id.boxSignUpName);
         phoneNo=findViewById(R.id.boxSignUpNumber);
@@ -56,16 +57,22 @@ public class SignUp extends AppCompatActivity {
 
             if(emailCheck(email)){
 
-                if(phoneNumber.length()!=10) {
+                if(phoneNumber.length()==10) {
 
                     try {
                         number = Integer.parseInt(phoneNumber);
 
                         if(passwordChecker(password)){
 
-
+                            // CREATE A NEW PERSON
+                            Person newUser=new Person(name,email,number,password);
+                            // ADD USER TO THE DATABASE
+                                    //****CODE GOES HERE
+                            //
                             // all input is valid
-                            Toast.makeText(this, "Signup successful", Toast.LENGTH_LONG).show();
+                            Toast.makeText(this, "Sign up successful!", Toast.LENGTH_LONG).show();
+                            Intent signedUp=new Intent(SignUp.this,Login.class);
+                            startActivity(signedUp);
 
                         }
 
