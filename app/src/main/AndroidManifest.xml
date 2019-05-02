@@ -11,6 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activityTabActivity"></activity>
         <activity android:name=".Groups" />
+        <activity android:name=".Login" />
+        <activity android:name=".SignUp" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Bill" />
         <activity android:name=".SplashScreen">

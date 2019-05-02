@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="@android:color/background_dark"
     tools:context=".Login">
 
     <Button
@@ -56,11 +56,11 @@
         android:layout_marginEnd="8sp"
         android:layout_marginRight="8sp"
         android:layout_marginBottom="8sp"
-        android:background="@android:color/holo_red_dark"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textColorHint="#95111010"
         android:textColorLink="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,7 +80,7 @@
         android:layout_marginEnd="8sp"
         android:layout_marginRight="8sp"
         android:layout_marginBottom="8sp"
-        android:background="@android:color/holo_red_dark"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
