@@ -38,16 +38,21 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="536dp"
+        app:boxBackgroundColor="#00FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/add"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/Item"
+            android:id="@+id/item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input item purchased." />
+            android:layout_weight="1"
+            android:hint="Input item purchased."
+            android:textColorHint="@android:color/white" />
     </android.support.design.widget.TextInputLayout>
 
     <EditText
@@ -69,7 +74,7 @@
 
     <TextView
         android:id="@+id/amountText"
-        android:layout_width="76dp"
+        android:layout_width="108dp"
         android:layout_height="26dp"
         android:layout_marginStart="17dp"
         android:layout_marginLeft="17dp"
@@ -81,8 +86,8 @@
         android:textAllCaps="true"
         android:textColor="#F80000"
         android:textSize="18sp"
-        android:textStyle="bold|italic"
-        app:fontFamily="sans-serif-condensed-light"
+        android:textStyle="bold"
+        app:fontFamily="@font/ubuntu_light"
         app:layout_constraintBottom_toTopOf="@+id/Amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.017"
@@ -106,6 +111,72 @@
         app:layout_constraintHorizontal_bias="0.988"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/frienList"
+        android:layout_width="185dp"
+        android:layout_height="298dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:background="#726C6C"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="360dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Select Friends that owe you:"
+        android:textColor="#020000"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Paid By:"
+        app:layout_constraintBottom_toTopOf="@+id/frienList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Amount">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paid by:" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="HomeClick"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frienList"
+        app:layout_constraintVertical_bias="0.666" />
 
 </android.support.constraint.ConstraintLayout>
