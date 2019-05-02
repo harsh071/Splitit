@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Split It</string>
+    <string name="app_name2">"   Split It"</string>
+
     <string name="todo">TODO</string>
     <string name="todo2">TODO</string>
     <string name="groups1">Groups</string>
