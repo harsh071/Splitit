@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -50,8 +51,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // validates the credintals
-                validateCredintals(email.getText().toString(),password.getText().toString());
+                if(email.getText().toString().isEmpty()||password.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Please enter all fields", Toast.LENGTH_SHORT).show();
+                }else {
+
+                    // validates the credintals
+                    validateCredintals(email.getText().toString(), password.getText().toString());
+                }
 
 
             }
@@ -72,6 +78,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void validateCredintals(String email, String password){
+
 
         progressDialog=new ProgressDialog(this);
         progressDialog.setMessage("Logging In");
@@ -98,6 +105,16 @@ public class Login extends AppCompatActivity {
             }
         });
 
+
+    }
+
+
+    @Override
+    public void onBackPressed() {
+    }
+
+    void passwordReset(View view){
+        startActivity(new Intent(Login.this,ForgotPassword.class));
     }
 
 }

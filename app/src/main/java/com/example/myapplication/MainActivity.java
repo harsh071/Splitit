@@ -41,5 +41,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    void menuClick(View view){
+        startActivity(new Intent(MainActivity.this,Menu.class));
+    }
+
+
+
 
 }

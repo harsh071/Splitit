@@ -10,22 +10,50 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/homeBar"
         android:layout_width="match_parent"
-        android:layout_height="70sp"
+        android:layout_height="60sp"
         android:background="@android:color/background_dark"
-        android:gravity="center"
         >
 
-        <TextView
-            android:id="@+id/bat_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textColor="@android:color/background_light"
-            android:textSize="50sp"
-            app:fontFamily="@font/allura" />
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/heading_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/bat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/app_name"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp"
+                app:fontFamily="@font/allura"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.118"
+                app:layout_constraintStart_toStartOf="parent" />
 
+            <ImageButton
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:onClick="menuClick"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.959"
+                app:layout_constraintStart_toEndOf="@+id/bat_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_preferences" />
 
+        </android.support.constraint.ConstraintLayout>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.TabLayout
