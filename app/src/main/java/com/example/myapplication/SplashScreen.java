@@ -16,10 +16,11 @@ public class SplashScreen extends AppCompatActivity {
     Thread thread = new Thread(){
         @Override
         public void run() {
+
             try {
 
                 Thread.sleep(800); // As I am using LENGTH_LONG in Toast
-                startActivity(new Intent(getApplicationContext() , MainActivity.class));
+                startActivity(new Intent(getApplicationContext() , Login.class));
                 finish();
 
             } catch (Exception e) {

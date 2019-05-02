@@ -1,9 +1,36 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Split It</string>
     <string name="todo">TODO</string>
     <string name="todo2">TODO</string>
     <string name="groups1">Groups</string>
     <string name="activity">Activity</string>
     <string name="friends">Friends</string>
+    <string name="name">"       Name"
+    </string>
+
+    <string name="number">"       Phone Number"
+    </string>
+
+    <string name="password">"       Password"
+    </string>
+
+    <string name="email">"       Email"
+    </string>
+
+    <string name="welcome">" Welcome!"
+    </string>
+
+    <string name="signUp">"   Sign up"
+    </string>
+
+    <string name="logIn">"Login"
+    </string>
+
+    <string name="loginSeparetor">"----------------------------OR---------------------------"
+    </string>
+
+    <string name="copyRighy">"©2019 Samp Studios"
+    </string>
+    <string name="title_activity_sign_up">SignUp</string>
 
 </resources>
