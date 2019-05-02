@@ -27,8 +27,9 @@ public class Bill extends AppCompatActivity {
         thread.start();
 
     }
-
-
+    public void HomeClick(View view) {
+        startActivity(new Intent(Bill.this , MainActivity.class));
+    }
     Thread thread = new Thread(){
         @Override
         public void run() {

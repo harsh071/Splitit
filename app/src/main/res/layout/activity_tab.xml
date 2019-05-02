@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
 
-    tools:context=".MainActivity">
+    tools:context=".activityTabActivity">
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton4"
         android:layout_width="wrap_content"
@@ -69,8 +69,7 @@
             android:layout_weight="1"
             android:onClick="friendClick"
 
-            android:text="FRIENDS"
-            android:textStyle="bold" />
+            android:text="FRIENDS" />
 
         <Button
             android:id="@+id/groups"
@@ -78,7 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="groupsClick"
-            android:text="GROUPS" />
+            android:text="GROUPS"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/activity"
