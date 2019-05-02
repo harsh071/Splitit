@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "932645208922",
+    "firebase_url": "https://splitit-aa445.firebaseio.com",
+    "project_id": "splitit-aa445",
+    "storage_bucket": "splitit-aa445.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932645208922:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932645208922-vifreihiku2qep663hfmh45st0vhr5np.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWAf-MlXk_X3CT5U-y8SbaRAiizW0CD48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932645208922-vifreihiku2qep663hfmh45st0vhr5np.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

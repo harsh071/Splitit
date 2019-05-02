@@ -8,7 +8,7 @@ public class Person {
 
     private String name;                    // name of person
     private String email;                   // email of person
-    private int phoneNo;                 // phone number of person
+    private String phoneNo;                 // phone number of person
     private String password;                // password of person
     private ArrayList<Expense> expenses;    // The expense history of person
     private ArrayList<Person> friends;      // THe friends of this person
@@ -21,7 +21,7 @@ public class Person {
     //
     // PURPOSE:   Constructor
     //-----------------------------------------------------
-    public Person(String name,String email,int phoneNo,String password){
+    Person(String name,String email,String phoneNo,String password){
 
         this.name=name;
         this.email=email;
@@ -36,11 +36,11 @@ public class Person {
     //
     // PURPOSE:   adds friend to this person
     //-----------------------------------------------------
-    public void addFriend(Person person){
+    void addFriend(Person person){
         friends.add(person);
     }
 
-    public void addExpense(Expense e, int valueOwed, int valueOwe){
+    void addExpense(Expense e, int valueOwed, int valueOwe){
         expenses.add(e);
         owe+=valueOwe;
         owed+=valueOwed;
@@ -54,7 +54,7 @@ public class Person {
         return name;
     }
 
-    public int getPhoneNo() {
+    public String getPhoneNo() {
         return phoneNo;
     }
 }
