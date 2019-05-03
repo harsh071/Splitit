@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-public class Friend {
+public class Friend{
     private String name;
     private double owes;
 
