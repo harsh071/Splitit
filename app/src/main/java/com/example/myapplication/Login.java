@@ -75,6 +75,7 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
     }
 
     private void validateCredintals(String email, String password){
