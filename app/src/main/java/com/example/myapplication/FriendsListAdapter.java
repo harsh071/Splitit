@@ -48,7 +48,6 @@ public class FriendsListAdapter extends RecyclerView.Adapter<FriendsListAdapter.
             super(itemView);
             mview = itemView;
 
-
             mNametext = (TextView) mview.findViewById(R.id.FriendName);
             mOwestext = (TextView) mview.findViewById(R.id.Owes);
 

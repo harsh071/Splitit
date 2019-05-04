@@ -73,11 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 for (DocumentChange doc: queryDocumentSnapshots.getDocumentChanges()){
                     if(doc.getType() == DocumentChange.Type.ADDED){
                         String name =  doc.getDocument().getString("Name");
-                        double owes =  doc.getDocument().getDouble("Owes");
-
-                        Friend friend  = new Friend(name,owes);
-                        fList.add(friend);
-
+//                        double owes =  doc.getDocument().getDouble("Owes");
+//                        Friend friend  = new Friend(name,Double.valueOf(owes));
+//                        fList.add(friend);
                         friendsListAdapter.notifyDataSetChanged();
                     }
                 }
@@ -90,6 +88,10 @@ public class MainActivity extends AppCompatActivity {
 
     void menuClick(View view){
         startActivity(new Intent(MainActivity.this,Menu.class));
+    }
+
+    public void AddBill(View view){
+        startActivity(new Intent(MainActivity.this,Bill.class));
     }
 
 
